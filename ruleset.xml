@@ -58,6 +58,8 @@
         </properties>
     </rule>
 
+    <rule ref="Squiz.Strings.DoubleQuoteUsage.ContainsVar" />
+
     <!-- If you have to do it : do it! -->
     <rule ref="Generic.Commenting.Todo" />
     <rule ref="Generic.Commenting.Fixme" />
