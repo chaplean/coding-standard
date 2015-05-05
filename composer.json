@@ -1,0 +1,15 @@
+{
+	"name": "chaplean/coding-standard",
+	"description": "Contains ruleset for coding standard",
+	"type": "ruleset",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Chaplean",
+			"homepage": "http://chaplean.com/"
+		}
+	],
+	"require": {
+		"php": ">=5.3.2"
+    }
+}
