@@ -23,15 +23,10 @@
         </properties>
     </rule>
 
-    <!-- Include all Squiz PHP rules -->
-    <!--<rule ref="Squiz.PHP">-->
-        <!-- Disable "This is valid code XX% but it is commented" -->
-        <!--<exclude name="Squiz.CommentedOutCodeSniff" />-->
-    <!--</rule>-->
+    <!-- Need one space after cast -->
+    <rule ref="Generic.Formatting.SpaceAfterCast"/>
 
     <!-- Makes mandatory to have Capital letter and Full stop -->
-    <!--<rule ref="Squiz.Commenting.FunctionComment" />-->
-    <!--<rule ref="Squiz.Commenting.FunctionCommentThrowTag" />-->
     <rule ref="PEAR.Commenting.FunctionComment" />
     <rule ref="PEAR.Commenting.FunctionComment.MissingParamComment">
     	<severity>0</severity>
