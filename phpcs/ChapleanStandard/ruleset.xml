@@ -1,18 +1,15 @@
 <?xml version="1.0"?>
-<ruleset name="Chaplean Standard">
+<ruleset name="ChapleanStandard">
     <description>Chaplean Coding Standard</description>
-
-    <exclude-pattern>*/data/*</exclude-pattern>
-    <exclude-pattern>Test.php</exclude-pattern>
 
     <!--
        Include all sniffs in the PSR2 standard.
     -->
     <rule ref="PSR2">
         <!-- Zend 1.12 needs to avoid mandatory namespace -->
-        <exclude name="PSR1.Classes.ClassDeclaration"/>
+        <exclude name="PSR1.Classes.ClassDeclaration" />
         <!-- Zend 1.12 needs to avoid valid class names (without underscores...) -->
-        <exclude name="Squiz.Classes.ValidClassName"/>
+        <exclude name="Squiz.Classes.ValidClassName" />
     </rule>
 
     <!-- Change line limits -->
@@ -24,12 +21,12 @@
     </rule>
 
     <!-- Need one space after cast -->
-    <rule ref="Generic.Formatting.SpaceAfterCast"/>
+    <rule ref="Generic.Formatting.SpaceAfterCast" />
 
     <!-- Makes mandatory to have Capital letter and Full stop -->
     <rule ref="PEAR.Commenting.FunctionComment" />
     <rule ref="PEAR.Commenting.FunctionComment.MissingParamComment">
-    	<severity>0</severity>
+        <severity>0</severity>
     </rule>
 
     <!-- Include some CSS rules -->
@@ -44,12 +41,12 @@
     <rule ref="Squiz.CSS.SemicolonSpacing" />
 
     <rule ref="Squiz.WhiteSpace.LogicalOperatorSpacing" />
-    <rule ref="Squiz.WhiteSpace.OperatorSpacing"/>
+    <rule ref="Squiz.WhiteSpace.OperatorSpacing" />
 
     <!-- No useless whitespace at the end of lines -->
     <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace">
         <properties>
-            <property name="ignoreBlankLines" value="true"/>
+            <property name="ignoreBlankLines" value="true" />
         </properties>
     </rule>
 
