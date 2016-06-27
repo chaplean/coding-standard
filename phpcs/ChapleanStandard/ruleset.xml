@@ -6,9 +6,7 @@
        Include all sniffs in the PSR2 standard.
     -->
     <rule ref="PSR2">
-        <!-- Zend 1.12 needs to avoid mandatory namespace -->
-        <exclude name="PSR1.Classes.ClassDeclaration" />
-        <!-- Zend 1.12 needs to avoid valid class names (without underscores...) -->
+        <!-- PHPCS himself and Zend 1.12 needs to avoid valid class names (without underscores...) -->
         <exclude name="Squiz.Classes.ValidClassName" />
     </rule>
 
@@ -24,8 +22,9 @@
     <rule ref="Generic.Formatting.SpaceAfterCast" />
 
     <!-- Makes mandatory to have Capital letter and Full stop -->
-    <rule ref="PEAR.Commenting.FunctionComment" />
-    <rule ref="PEAR.Commenting.FunctionComment.MissingParamComment">
+    <rule ref="Squiz.Commenting.ClassComment" />
+    <rule ref="Squiz.Commenting.FunctionComment" />
+    <rule ref="Squiz.Commenting.FunctionComment.MissingParamComment">
         <severity>0</severity>
     </rule>
 
@@ -40,6 +39,7 @@
     <rule ref="Squiz.CSS.Indentation" />
     <rule ref="Squiz.CSS.SemicolonSpacing" />
 
+    <rule ref="Squiz.WhiteSpace.CastSpacing"/>
     <rule ref="Squiz.WhiteSpace.LogicalOperatorSpacing" />
     <rule ref="Squiz.WhiteSpace.OperatorSpacing" />
 

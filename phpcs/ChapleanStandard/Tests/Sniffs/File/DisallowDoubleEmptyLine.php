@@ -1,20 +1,32 @@
 <?php
-// Error behind
 
+namespace Sniffs\File;
 
-class DisallowDoubleEmptyLineTest {
-    public function echoTest() {
+/**
+ * Class DisallowDoubleEmptyLineTest.
+ *
+ * @package   Sniffs\File
+ * @author    Tom - Chaplean <tom@chaplean.com>
+ * @copyright 2014 - 2016 Chaplean (http://www.chaplean.com)
+ * @since     1.1.0
+ */
+class DisallowDoubleEmptyLineTest
+{
+    /**
+     * @return void
+     */
+    public function echoTest()
+    {
         echo 'test';
-        // Oops, i did it again
-        
+        // I WANT AN ERROR BEHIND
 
 
         echo 'truc';
 
         echo 'truc';
 
-        // No error :)
-        
+        // No error please
+
         echo 'truc';
 
         echo 'truc';
