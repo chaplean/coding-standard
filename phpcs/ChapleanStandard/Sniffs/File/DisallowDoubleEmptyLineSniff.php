@@ -44,7 +44,9 @@ class ChapleanStandard_Sniffs_File_DisallowDoubleEmptyLineSniff implements PHP_C
         $nextLine = $token['column'] == 1 && $containsNewLineCharacter;
 
         // Cause it's really annoying to show something... [For test purpuse only]
-//        $phpcsFile->addWarning($this->consecutiveLines . ' ' . json_encode($token['content']) . ' ' . intval($containsNewLineCharacter) . ' ' . $token['line'] . '-' . $token['column'] . ' ' . var_export($nextLine, true), $stackPtr, 'Test');
+//        $msg = $this->consecutiveLines . ' ' . json_encode($token['content']) . ' ' . (int) $containsNewLineCharacter . ' ' . $token['line'] . '-' . $token['column'] . ' ' .
+//               var_export($nextLine, true);
+//        $phpcsFile->addWarning($msg, $stackPtr, 'Test');
 
         if ($nextLine) {
             $this->consecutiveLines++;
