@@ -21,8 +21,10 @@
     <!-- Need one space after cast -->
     <rule ref="Generic.Formatting.SpaceAfterCast" />
 
-    <!-- Makes mandatory to have Capital letter and Full stop -->
-    <rule ref="Squiz.Commenting.ClassComment" />
+    <!-- Makes mandatory to have PHPDoc -->
+    <rule ref="Squiz.Commenting.ClassComment">
+        <exclude name="Squiz.Commenting.ClassComment.TagNotAllowed" />
+    </rule>
     <rule ref="Squiz.Commenting.FunctionComment" />
     <rule ref="Squiz.Commenting.FunctionComment.MissingParamComment">
         <severity>0</severity>
