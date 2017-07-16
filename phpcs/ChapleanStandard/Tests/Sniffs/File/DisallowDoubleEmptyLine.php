@@ -6,8 +6,8 @@ namespace Sniffs\File;
  * Class DisallowDoubleEmptyLineTest.
  *
  * @package   Sniffs\File
- * @author    Tom - Chaplean <tom@chaplean.com>
- * @copyright 2014 - 2016 Chaplean (http://www.chaplean.com)
+ * @author    Tom - Chaplean <tom@chaplean.coop>
+ * @copyright 2014 - 2016 Chaplean (http://www.chaplean.coop)
  * @since     1.1.0
  */
 class DisallowDoubleEmptyLineTest

@@ -3,8 +3,8 @@
 /**
  * Disallow double consecutive empty lines in file.
  *
- * @author    Tom - Chaplean <tom@chaplean.com>
- * @copyright 2014 - 2015 Chaplean (http://www.chaplean.com)
+ * @author    Tom - Chaplean <tom@chaplean.coop>
+ * @copyright 2014 - 2017 Chaplean (http://www.chaplean.coop)
  * @since     1.1.0
  */
 class ChapleanStandard_Sniffs_File_DisallowDoubleEmptyLineSniff implements PHP_CodeSniffer_Sniff
@@ -27,7 +27,7 @@ class ChapleanStandard_Sniffs_File_DisallowDoubleEmptyLineSniff implements PHP_C
      * Processes the tokens that this sniff is interested in.
      *
      * @param PHP_CodeSniffer_File $phpcsFile The file where the token was found.
-     * @param int                  $stackPtr  The position in the stack where
+     * @param integer              $stackPtr  The position in the stack where
      *                                        the token was found.
      *
      * @return void
